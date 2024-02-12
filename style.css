@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid crimson; */
+}
+
+/* main container */
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.container-1{
+    height: 100%;
+    width: 60%;
+    position: relative;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-image: url(./assets/trip-bg-Photoroom.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.container-1 h2{
+    font-size: 1.7em;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.container-1 h1{
+    font-size: 2.1em;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    top: 150px;
+    right: 60px;
+}
+
+.container-1 h1 span{
+    font-size: 37px;
+}
+
+
+.container-1 button{
+    width: 170px;
+    padding: 14px;
+    font-size: 1em;
+    font-weight: 700;
+    color: #003858;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 280px;
+    right: 310px;
+}
+
+/* cantainer 2 */
+
+.container-2{
+    width: 50%;
+    max-height: 100vh;
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+/* navbar */
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* border: 1px solid crimson; */
+    padding: 20px 0px 20px 100px;
+}
+
+.nav button{
+    background: rgb(28,129,176);
+    background: linear-gradient(0deg, rgba(28,129,176,1) 0%, rgba(25,55,87,1) 100%);
+    color: white;
+    border: 1px solid transparent;
+}
+
+.nav button:hover{
+    background: white;
+    color: black;
+    border: 1px solid #003858;
+}
+
+.btn button{
+    padding: 11px 20px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 25px;
+    margin-left: 30px;
+}
+
+.app-btn i{
+    font-size: 25px;
+    padding: 10px;
+    margin: auto;
+}
+
+.app-btn button{
+    border-radius: 30px;
+}
+
+/* service */
+
+.service{
+    padding: 10px 6px;
+    /* margin-top: 50px; */
+}
+
+.service h1{
+    text-align: center;
+    /* padding: 0 10% ; */
+}
+
+.card-section{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card p
+{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.icon{
+    background: rgb(28,129,176);
+    background: linear-gradient(0deg, rgba(28,129,176,1) 0%, rgba(25,55,87,1) 100%);
+    height: 60px;
+    width: 60px;
+    border-radius: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon:hover{
+    background: white;
+}
+
+.icon:hover i{
+    color: black;
+}
+
+.icon i{
+    color: white;
+    font-size: 30px;
+}
+
+.card p{
+    margin-top: 15px;
+}
+
+/* search bar */
+
+.search-bar{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+
+.search-bar h1{
+    font-size: 37px;
+}
+
+.search-bar h1 span{
+    color: darkgray;
+}
+
+.search-icon{
+    margin-top: 20px;
+}
+
+/* booking */
+
+.booking{
+    margin: 20px;
+    background-color: #F6F6FA;
+    border-radius: 20px;
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 10px;
+}
+
+.booking div{
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgb(66, 66, 66);
+}
+
+.booking div i{
+    color: #003858;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.booking div p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* responsive */
+
+@media (max-width:1100px) {
+   
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container-1{
+        width: 100vw;
+        min-height: 70vh;
+        background-position: contain;
+        border-radius: 0px;
+    }
+
+    .container-2{
+        width: 100vw;
+    }
+
+    
+.container-1 h2{
+    font-size: 1.7em;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 20px;
+}
+
+.container-1 h1{
+    font-size: 2em;
+    position: absolute;
+    top: 20%;
+    left: 30px;
+}
+
+
+.container-1 button{
+    position: absolute;
+    top: 60%;
+    left: 30px;
+}
+
+.nav{
+    display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
